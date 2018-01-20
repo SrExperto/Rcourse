@@ -13,7 +13,7 @@ paths_allowed("http://www.imdb.com")
 ```
 
 ```{r imdb_top_250}
-page <- read_html("http://www.imdb.com/chart/top")
+page <- read_html("http://www.imdb.com/chart/tvmeter")
 titles <- page %>%
   html_nodes(".titleColumn a") %>%
   html_text()
